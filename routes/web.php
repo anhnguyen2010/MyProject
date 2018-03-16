@@ -19,7 +19,7 @@ router::get('index', [
     'as'=>'trang-chu',
     'uses'=>'PageController@getIndex'
 ]);
-router::get('loai-san-pham', [
+router::get('loai-san-pham/{type}', [
     'as'=>'loaisanpham',
     'uses'=>'PageController@getLoaiSp'
 ]);
