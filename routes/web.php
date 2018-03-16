@@ -23,7 +23,7 @@ router::get('loai-san-pham/{type}', [
     'as'=>'loaisanpham',
     'uses'=>'PageController@getLoaiSp'
 ]);
-router::get('chi-tiet-san-pham', [
+router::get('chi-tiet-san-pham/{id}', [
     'as'=>'chitietsanpham',
     'uses'=>'PageController@getChitiet'
 ]);

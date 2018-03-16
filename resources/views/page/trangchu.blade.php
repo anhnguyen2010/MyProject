@@ -44,7 +44,7 @@
                                 <div class="single-item">
                                     @if($new->promotion_price!=0)
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="source/image/product/{{$new->image}}" alt=""></a>
+                                        <a href="{{route('chitietsanpham', $new->id)}}"><img src="source/image/product/{{$new->image}}" alt=""></a>
                                     </div>
                                     @endif
                                     <div class="single-item-body">
@@ -85,7 +85,7 @@
                             <div class="col-sm-3">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="product.html"><img src="source/image/product/{{$spkm->image}}" alt=""></a>
+                                        <a href="{{route('chitietsanpham', $spkm->id)}}"><img src="source/image/product/{{$spkm->image}}" alt=""></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">{{$spkm->name}}</p>
