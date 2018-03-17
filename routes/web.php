@@ -35,3 +35,11 @@ router::get('gioi-thieu', [
     'as'=>'gioithieu',
     'uses'=>'PageController@getGioiThieu'
 ]);
+route::get('add-to-cart/{id}', [
+    'as'=>'themgiohang',
+    'uses'=>'PageController@getAddtoCart'
+]);
+route::get('del-cart/{id}', [
+   'as'=>'xoagiohang',
+    'uses'=>'PageController@getDelItemCart'
+]);
