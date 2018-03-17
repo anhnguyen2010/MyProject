@@ -43,3 +43,15 @@ route::get('del-cart/{id}', [
    'as'=>'xoagiohang',
     'uses'=>'PageController@getDelItemCart'
 ]);
+route::get('dang-nhap', [
+    'as'=>'login',
+    'uses'=>'PageController@getLogin'
+]);
+route::get('dang-ky', [
+    'as'=>'signin',
+    'uses'=>'PageController@getSignin'
+]);
+route::post('dang-ky', [
+    'as'=>'signin',
+    'uses'=>'PageController@postSignin'
+]);
